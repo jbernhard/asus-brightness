@@ -1,0 +1,12 @@
+[Unit]
+Description=Allow user access to brightness controls
+After=systemd-udevd.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/asus-brightness start
+ExecStop=/usr/bin/asus-brightness stop
+
+[Install]
+WantedBy=multi-user.target

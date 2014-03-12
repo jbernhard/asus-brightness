@@ -4,7 +4,8 @@ pkgrel=1
 pkgdesc="Asus UX31A screen and keyboard backlight helper script."
 arch=('any')
 depends=('zsh' 'systemd')
-license=('none')
+license=('MIT')
+url=('https://github.com/jbernhard/asus-brightness')
 
 source=("$pkgname.zsh" "$pkgname.service")
 sha1sums=('335e739a947b3ebe6aa480eae5a526cb4161d18b'

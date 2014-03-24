@@ -21,7 +21,8 @@ case $1/$2 in
       sleep .5
     done
 
-    echo $kbmin > $kbstate
+    # systemd appears to handle this now
+    #echo $kbmin > $kbstate
     chgrp users $kbstate
     chmod g+w $kbstate
     ;;

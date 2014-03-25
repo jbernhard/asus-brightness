@@ -11,4 +11,4 @@ A simple helper script for screen and keyboard backlight on an Asus UX31A laptop
 alias for 0, max is an alias for 3.  Use +/- to increment/decrement (personally I have assigned window manager shortcuts for this).  Read
 the current brightness with `asus-brightness kb` (no additional argument).
 * Screen brightness keys should have already worked.  All this does is provide a shortcut to read the brightness percentage, `asus-brightess
-screen`.
+screen`.  I suggest adding `Option "Backlight" "intel_backlight"` in xorg.conf.d.

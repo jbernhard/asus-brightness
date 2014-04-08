@@ -17,12 +17,8 @@ case $1/$2 in
   # turn keyboard backlight off
   # intended for use during system startup
   start/) 
-    while [[ ! -f $kbstate ]]; do
-      sleep .5
-    done
-
-    # systemd appears to handle this now
-    #echo $kbmin > $kbstate
+    # turn off kb backlight on startup
+    echo $kbmin > $kbstate
     chgrp users $kbstate
     chmod g+w $kbstate
     ;;

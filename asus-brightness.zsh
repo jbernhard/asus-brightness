@@ -44,10 +44,10 @@ case $1/$2 in
   # help
   *)
   cat <<EOF
-usage:
-$0 (start|stop)
-$0 screen
-$0 kb (min|max|-|+|<0-3>)
+usage: $0 ...
+  start|stop
+  screen
+  kb min|max|-|+|<0-3>
 EOF
     ;;
 esac
